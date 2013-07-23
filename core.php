@@ -10,9 +10,7 @@
 function load_library( $a = array() ) {
 
   foreach ( $a as $v ) {
-    if ( file_exists( THEME_DIR . $v ) ) {
-      require_once( THEME_DIR . $v );
-    }
+    include( THEME_DIR . $v );
   }
 
 }
