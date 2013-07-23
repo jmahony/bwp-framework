@@ -25,7 +25,7 @@ if ( !defined( 'CURRENT_THEME_URL' ) ) {
 
 }
 
-if ( !defined('FRAMEWORK_URL') )  define('FRAMEWORK_URL', CURRENT_THEME_URL . '/framework');
+if ( !defined('FRAMEWORK_URL') )  define('FRAMEWORK_URL', CURRENT_THEME_URL . '/bwp-framework');
 
 if ( !defined('LIBRARY_URL') )  define('LIBRARY_URL', FRAMEWORK_URL . '/lib');
 
@@ -34,7 +34,7 @@ define( 'ASSETS_URL', CURRENT_THEME_URL . '/assets' );
 // Load core functions
 require_once( 'core.php' );
 
-\Rep\Core\load_library( array( '/framework/bootstrap.php' ) );
+\Rep\Core\load_library( array( '/bwp-framework/bootstrap.php' ) );
 
 // Register Mustache
 Mustache_Autoloader::register();

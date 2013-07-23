@@ -9,20 +9,20 @@
 
 $admin_libraries = array(
 
-  '/framework/lib/JMetaBox/build/init.php',
+  '/bwp-framework/lib/JMetaBox/build/init.php',
   '/includes/rep_meta_boxes.php',
 
 );
 
 $framework_libraries = array(
 
-  '/framework/lib/NHP-Theme-Options-Framework/options/options.php',
-  '/framework/defaults.php',
-  '/framework/lib/Mustache/Autoloader.php',
-  '/framework/lib/twitteroauth/twitteroauth/twitteroauth.php',
-  '/framework/lib/helpers.php',
-  '/framework/lib/enqueue.php',
-  '/framework/lib/persistence.php'
+  '/bwp-framework/lib/NHP-Theme-Options-Framework/options/options.php',
+  '/bwp-framework/defaults.php',
+  '/bwp-framework/lib/mustache/src/Mustache/Autoloader.php',
+  '/bwp-framework/lib/twitteroauth/twitteroauth/twitteroauth.php',
+  '/bwp-framework/lib/helpers.php',
+  '/bwp-framework/lib/enqueue.php',
+  '/bwp-framework/lib/persistence.php'
 
 );
 
@@ -42,7 +42,7 @@ $custom_libraries = array(
 /* Include stuff last */
 $after = array(
 
-  '/framework/actions.php'
+  '/bwp-framework/actions.php'
 
 );
 
