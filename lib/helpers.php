@@ -223,8 +223,6 @@ function post_type_labels( $singular = null, $plural = null, $prepend = null, $a
 
 	if ( $plural === null ) {
 		$plural = $singular . 's';
-	} else {
-		$plural = $singular;
 	}
 
 	$plural = ucwords( $plural );
@@ -543,6 +541,24 @@ function get_mustache() {
     'loader' => new Mustache_Loader_FilesystemLoader( dirname(__FILE__) . '/includes/views' )
 	) );
 
+}
+
+/**
+ * set_defaults
+ *
+ * Sets the defaults for a shortcode array
+ * This is the same as shortcode atts...
+ * @return array
+ **/
+function set_defaults($args = array(), $defaults = array()) {
+
+	/* Only allow keys that are in the default array */
+	$args = array_intersect_key( $args, $defaults );
+
+	/* Merge in default values for keys not already defined */
+	$args = array_merge( $defaults, $args );
+
+	return $args;
 }
 
 ?>
