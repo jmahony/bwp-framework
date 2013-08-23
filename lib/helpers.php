@@ -553,7 +553,7 @@ function get_mustache() {
 function set_defaults($args = array(), $defaults = array()) {
 
 	/* Only allow keys that are in the default array */
-	$args = array_intersect_key( $args, $defaults );
+	$args = array_intersect_key( (array) $args, (array) $defaults );
 
 	/* Merge in default values for keys not already defined */
 	$args = array_merge( $defaults, $args );
